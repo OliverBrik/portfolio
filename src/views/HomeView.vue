@@ -15,7 +15,7 @@
         <p class="text-white-85">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
       </div>
       <div class="col-span-12 md:col-span-6 self-start">
-        <img src="https://picsum.photos/600/800" alt="" class="w-full h-auto object-cover pr-8">
+        <img src="https://picsum.photos/600/800" alt="" class="w-full h-128 object-cover rounded-lg shadow-lg pr-12">
       </div>
     </div>
   </main>

@@ -1,14 +1,22 @@
+
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import profileImg from '@/assets/imgs/logo ob.svg'
 </script>
 
 <template>
   <div class="min-h-screen w-full grid grid-rows-[auto_1fr_auto] bg-olive text-white">
     <header class="w-full shadow z-50 bg-moss text-white">
       <div class="wrapper w-full px-4 grid grid-cols-12 gap-4">
-        <nav class="col-span-12 md:col-start-2 md:col-span-11 flex py-4 gap-6">
-          <RouterLink to="/" class="nav-link hover:text-gold font-semibold">Home</RouterLink>
-          <RouterLink to="/myprojects" class="nav-link hover:text-gold font-semibold">My Projects</RouterLink>
+        <nav class="col-span-12 md:col-start-2 md:col-span-11 grid grid-cols-3 items-center py-2 gap-10">
+          <div class="flex justify-start gap-4">
+            <RouterLink to="/" class="nav-link hover:text-gold font-semibold">Home</RouterLink>
+            <RouterLink to="/myprojects" class="nav-link hover:text-gold font-semibold">My Projects</RouterLink>
+          </div>
+          <div class="flex justify-center">
+            <img :src="profileImg" alt="Profile" class="w-20 h-auto max-h-16 pb-4" />
+          </div>
+          <div></div>
         </nav>
       </div>
     </header>
