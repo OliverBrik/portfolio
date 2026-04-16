@@ -1,0 +1,10 @@
+/* Color Theme Variables */
+:root {
+  --color-olive: #2B2E1F;
+  --color-moss: #4A5D3A;
+  --color-sage: #7A8058;
+  --color-gold: #B89B4F;
+  --color-white: #F4F4F2;
+}
+@import './base.css';
+@import "tailwindcss";
