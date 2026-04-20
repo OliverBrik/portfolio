@@ -16,7 +16,7 @@
           <div class="w-full mb-6">
             <span class="block h-1 w-4/5 bg-gold rounded-full"></span>
           </div>
-          <!-- Evt. ekstra tekst under titlen -->
+          
           <p class="mb-2 text-sm text-white-85 max-w-xl">Hej jeg hedder Oliver, er 22 år gammel og er i gang med 2. semester på Multimediedesigneruddannelsen på Syddansk Erhvervsakademi. Jeg har en stor interesse for digitale løsninger og arbejder bedst i krydsfeltet mellem design, funktionalitet og visuel kommunikation.</p>
           <p class="mb-2 text-sm text-white-85 max-w-xl">Jeg motiveres af at omsætte idéer til konkrete løsninger og kan godt lide at være med hele vejen, fra de første tanker og skitser til det færdige resultat. For mig handler godt design ikke kun om, at det ser godt ud, men også om at det fungerer, er intuitivt og giver mening for brugeren.</p>
           <p class="mb-4 text-sm text-white-85 max-w-xl">Gennem mit studie og mine projekter har jeg opbygget en struktureret måde at arbejde på, hvor jeg har fokus på kvalitet, detaljer og sammenhæng. Jeg trives i kreative processer, men sætter også pris på klare rammer og formål. Samtidig er jeg nysgerrig af natur og konstant interesseret i at udvikle mig og lære nyt, både fagligt og personligt.</p>
@@ -37,7 +37,7 @@
       </div>
       <div class="col-span-12 md:col-span-6 self-start flex items-start justify-center pt-6 md:pr-12">
         <div class="w-full h-96 md:h-[28rem] border-[var(--color-gold)] rounded-none overflow-hidden flex items-center justify-center">
-          <img src="https://picsum.photos/600/800" alt="" class="w-full h-full object-cover rounded-none">
+          <img src="@/assets/imgs/Oliver-editedweb3.jpg" alt="Oliver Reffsøe Brik" class="w-full h-full object-cover rounded-none">
         </div>
       </div>
     </div>
