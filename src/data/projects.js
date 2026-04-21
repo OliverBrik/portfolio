@@ -1,17 +1,17 @@
 export const projects = [
-  {
+      {
     id: 1,
-    title: 'Portfolio Website',
+    title: 'Video CV',
     year: '2026',
-    role: 'UX/UI + Frontend',
+    role: 'Video Production',
     summary:
-      'Personlig portfolio bygget i Vue med fokus på tydelig identitet, performance og responsivt layout.',
-    tools: ['Vue 3', 'Tailwind', 'Vite','JavaScript'],
+      'Dashboard prototype til redaktionelt overblik med komponentbaseret opbygning og filtrering.',
+    tools: ['Vue', 'Pinia', 'Chart.js'],
     liveUrl: '#',
     repoUrl: '#',
-    image: 'https://picsum.photos/seed/project-1/900/600',
+    image: 'https://picsum.photos/seed/project-6/900/600',
   },
-  {
+    {
     id: 2,
     title: 'Brødrene Løvehjerte (Eksamensprojekt)',
     year: '2025',
@@ -26,6 +26,18 @@ export const projects = [
   },
   {
     id: 3,
+    title: 'Portfolio Website',
+    year: '2026',
+    role: 'UX/UI + Frontend',
+    summary:
+      'Personlig portfolio bygget i Vue med fokus på tydelig identitet, performance og responsivt layout.',
+    tools: ['Vue 3', 'Tailwind', 'Vite','JavaScript'],
+    liveUrl: '#',
+    repoUrl: '#',
+    image: 'https://picsum.photos/seed/project-1/900/600',
+  },
+  {
+    id: 4,
     title: 'Mini-Me Projekt',
     year: '2025',
     role: 'Content Creation',
@@ -37,7 +49,7 @@ export const projects = [
     image: 'https://picsum.photos/seed/project-3/900/600',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Infographics Plakat',
     year: '2026',
     role: 'Frontend',
@@ -49,7 +61,7 @@ export const projects = [
     image: 'https://picsum.photos/seed/project-4/900/600',
   },
     {
-    id: 5,
+    id: 6,
     title: 'Mit Business Card',
     year: '2025',
     role: 'Frontend',
@@ -59,18 +71,5 @@ export const projects = [
     liveUrl: '#',
     repoUrl: '#',
     image: 'https://picsum.photos/seed/project-5/900/600',
-  },
-  
-  {
-    id: 6,
-    title: 'Video CV',
-    year: '2026',
-    role: 'Video Production',
-    summary:
-      'Dashboard prototype til redaktionelt overblik med komponentbaseret opbygning og filtrering.',
-    tools: ['Vue', 'Pinia', 'Chart.js'],
-    liveUrl: '#',
-    repoUrl: '#',
-    image: 'https://picsum.photos/seed/project-6/900/600',
   },
 ]
