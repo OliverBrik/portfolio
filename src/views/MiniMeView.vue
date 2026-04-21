@@ -33,7 +33,7 @@ const miniMeCardImage = '/mini-me-card.jpg'
               <h2 class="text-white text-2xl font-bold mb-3">Projekt Detaljer</h2>
               <p class="text-white-85 mb-3">
                 I Mini-Me projektet arbejdede jeg med karakterdesign og visuel storytelling med udgangspunkt i min egen identitet.
-                Målet var at skabe en letgenkendelig digital figur, som kunne bruges pa tværs af portfolio, præsentationer og sociale medier.
+                Målet var at skabe en letgenkendelig digital figur, som kunne bruges på tværs af portfolio, præsentationer og sociale medier.
               </p>
               <p class="text-white-85 mb-3">
                 Processen omfattede skitsering, farvevalg, forenkling af former og iteration i Illustrator og Photoshop,
@@ -45,7 +45,7 @@ const miniMeCardImage = '/mini-me-card.jpg'
             </section>
 
             <section>
-              <h2 class="text-white text-xl font-bold mb-3">Vaerktojer</h2>
+              <h2 class="text-white text-xl font-bold mb-3">Værktøjer</h2>
               <ul class="flex flex-wrap gap-2">
                 <li
                   v-for="tool in project.tools"
