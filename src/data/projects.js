@@ -24,6 +24,7 @@ export const projects = [
         tools: ['Figma', 'HTML', 'CSS', 'JavaScript', 'InDesign', 'Photoshop', 'Illustrator'],
         liveUrl: '#',
         repoUrl: 'https://github.com/Mogensan/broedrende-loevehjerte',
+        reportUrl: '/1stSemesterExamRapport.pdf',
         image: 'https://picsum.photos/seed/project-2/900/600',
     },
     {
