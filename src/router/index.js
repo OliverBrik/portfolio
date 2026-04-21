@@ -28,6 +28,11 @@ const router = createRouter({
       component: () => import('../views/PortfolioWebsiteView.vue'),
     },
     {
+      path: '/projects/mini-me',
+      name: 'mini-me',
+      component: () => import('../views/MiniMeView.vue'),
+    },
+    {
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue'),
