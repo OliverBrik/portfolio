@@ -34,14 +34,20 @@ const project = projects.find((item) => item.id === 2)
                 Dette eksamensprojekt blev udviklet som en samlet kampagneoplevelse for teaterstykket Brødrene Løvehjerte.
                 Fokus var pa visuel identitet, storytelling og digital formidling pa tværs af platforme.
               </p>
-              <p class="text-white-85">
+              <p class="text-white-85 mb-3">
                 Jeg arbejdede med ideudvikling, UX/UI, frontend og grafisk produktion for at skabe en tydelig og engagerende brugerrejse.
                 Det var vigtigt i denne opgave at vi skulle have fokus på målgruppen, da det er et børne og familievenligt stykke, og derfor skulle være let tilgængeligt og indbydende for både børn og voksne.
+                <p class="text-white-85 pt-2">
+                    Denne opgave var en fantastisk mulighed for at anvende og integrere forskellige færdigheder og værktøjer, og det var spændende at se, hvordan de forskellige elementer kunne arbejde sammen for at skabe en sammenhængende og effektiv kampagneoplevelse.
+                </p>
               </p>
-            </section>
+                 <p class="text-white-85 text-bold pt-2">
+                    Denne opgave er udarbejdet i samarbejde med min medstuderende Anders Mogensen og Roben Eid, hvor vi delte opgaverne og arbejdede tæt sammen gennem hele processen for at sikre et stærkt og sammenhængende resultat.
+                    </p>
+                </section>
 
             <section>
-              <h2 class="text-white text-xl font-bold mb-3">Vaerktojer</h2>
+              <h2 class="text-white text-xl font-bold mb-3">Værktøjer</h2>
               <ul class="flex flex-wrap gap-2">
                 <li
                   v-for="tool in project.tools"
@@ -60,6 +66,9 @@ const project = projects.find((item) => item.id === 2)
             </a>
             <a v-if="project.reportUrl && project.reportUrl !== '#'" :href="project.reportUrl" target="_blank" rel="noreferrer" class="project-link text-[var(--color-gold)] font-semibold">
               Rapport
+            </a>
+            <a v-if="project.videoUrl && project.videoUrl !== '#'" :href="project.videoUrl" target="_blank" rel="noreferrer" class="project-link text-[var(--color-gold)] font-semibold">
+              Sociale medie Video
             </a>
             <a v-if="project.liveUrl && project.liveUrl !== '#'" :href="project.liveUrl" target="_blank" rel="noreferrer" class="project-link text-[var(--color-gold)] font-semibold">
               Live projekt

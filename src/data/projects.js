@@ -1,4 +1,5 @@
 import videoCvScreenImage from '@/assets/imgs/videocvscreen.jpg'
+import card2ScreenImage from '@/assets/imgs/BLHheaderimg.jpg'
 
 export const projects = [
     {
@@ -21,11 +22,12 @@ export const projects = [
         role: 'Design + Frontend + UX/UI + Video Production',
         summary:
             'Første semester eksamensprojekt for Multimediedesigner uddannelsen, her fik vi opgaven at vi skulle promovere teaterstykket Brødrene løvehjerte af Esbjergs Amatør teater Skarntyden',
-        tools: ['Figma', 'HTML', 'CSS', 'JavaScript', 'InDesign', 'Photoshop', 'Illustrator'],
+        tools: ['Figma', 'HTML', 'CSS', 'Research', 'InDesign', 'Photoshop', 'Illustrator'],
         liveUrl: '#',
         repoUrl: 'https://github.com/Mogensan/broedrende-loevehjerte',
         reportUrl: '/1stSemesterExamRapport.pdf',
-        image: 'https://picsum.photos/seed/project-2/900/600',
+        videoUrl: 'https://www.youtube.com/shorts/ay6_dKBfIhs',
+        image: card2ScreenImage,
     },
     {
         id: 3,
