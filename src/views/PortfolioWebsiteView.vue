@@ -42,21 +42,21 @@ const galleryItems = [
             <section class="md:col-span-2">
               <h2 class="text-white text-2xl font-bold mb-3">Projekt Detaljer</h2>
               <p class="text-white-85 mb-3">
-                Portfolio-projektet er bygget som et levende case-site, hvor fokus har vaeret pa at kommunikere min faglige profil tydeligt.
-                Malet var at skabe en side med klar struktur, personlig identitet og en professionel visuel retning.
+                Portfolio-projektet er bygget som et levende case-site, hvor fokus har været på at kommunikere min faglige profil tydeligt.
+                Målet var at skabe en side med klar struktur, personlig identitet og en professionel visuel retning.
               </p>
               <p class="text-white-85 mb-3">
                 Jeg har arbejdet med komponentopbygning i Vue, responsive layouts, genbrugelige project cards og konsistent styling,
-                sa alle sider foles som samme designunivers.
+                så alle sider føles som samme design univers.
               </p>
               <p class="text-white-85">
-                Derudover har jeg fokuseret pa praktiske detaljer som clickable media, PDF-links, projektsider og fleksibel dataopsatning,
-                sa siden er nem at videreudvikle med nye cases.
+                Derudover har jeg fokuseret på praktiske detaljer som clickable media, PDF-links, projektsider og fleksibel dataopsatning,
+                så siden er nem at videreudvikle med nye cases.
               </p>
             </section>
 
             <section>
-              <h2 class="text-white text-xl font-bold mb-3">Vaerktojer</h2>
+              <h2 class="text-white text-xl font-bold mb-3">Værktøjer</h2>
               <ul class="flex flex-wrap gap-2">
                 <li
                   v-for="tool in project.tools"

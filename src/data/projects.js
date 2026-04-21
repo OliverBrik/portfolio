@@ -1,5 +1,6 @@
 import videoCvScreenImage from '@/assets/imgs/videocvscreen.jpg'
 import card2ScreenImage from '@/assets/imgs/BLHheaderimg.jpg'
+import card3ScreenImage from '@/assets/imgs/portfoliopage.jpg'
 
 export const projects = [
     {
@@ -31,15 +32,15 @@ export const projects = [
     },
     {
         id: 3,
-        title: 'Portfolio Website',
+        title: 'Portfolio Projekt',
         year: '2026',
-        role: 'UX/UI + Frontend',
+        role: 'UX/UI + Frontend + Content Creation',
         summary:
             'Personlig portfolio bygget i Vue med fokus på tydelig identitet, informativt, performance og responsivt layout.',
         tools: ['Vue 3', 'TailwindCSS', 'Vite', 'JavaScript'],
         liveUrl: '#',
         repoUrl: '#',
-        image: 'https://picsum.photos/seed/project-1/900/600',
+        image: card3ScreenImage,
     },
     {
         id: 4,
@@ -64,17 +65,5 @@ export const projects = [
         liveUrl: '#',
         repoUrl: '#',
         image: 'https://picsum.photos/seed/project-4/900/600',
-    },
-    {
-        id: 6,
-        title: 'Mit Business Card',
-        year: '2026',
-        role: 'Content Creation',
-        summary:
-            'Mit Business Card er et kreativt projekt, hvor jeg har designet og produceret et unikt visitkort, der afspejler min personlighed og professionelle identitet samt en klar rød tråd igennem min personlige identitet, ved hjælp af Illustrator og Photoshop.',
-        tools: ['Illustrator', 'Photoshop',],
-        liveUrl: '#',
-        repoUrl: '#',
-        image: 'https://picsum.photos/seed/project-5/900/600',
     },
 ]
