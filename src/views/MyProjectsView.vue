@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router'
 import { projects } from '@/data/projects'
 </script>
 
@@ -17,7 +18,17 @@ import { projects } from '@/data/projects'
           class="project-card border-2 border-[var(--color-gold)] bg-moss/45 overflow-hidden"
         >
           <div class="h-52 border-b border-[rgba(184,155,79,0.35)]">
-            <img :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
+            <a
+              v-if="project.id === 1"
+              :href="project.liveUrl"
+              target="_blank"
+              rel="noreferrer"
+              class="block w-full h-full"
+              aria-label="Se Video CV pa YouTube"
+            >
+              <img :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
+            </a>
+            <img v-else :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
           </div>
 
           <div class="p-5">
@@ -40,11 +51,21 @@ import { projects } from '@/data/projects'
             </ul>
 
             <div class="flex items-center gap-4">
-              <a :href="project.liveUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
+              <RouterLink
+                v-if="project.id === 2"
+                to="/projects/broedrene-loevehjerte"
+                class="project-link text-[var(--color-gold)] font-semibold"
+              >
+                Se projekt
+              </RouterLink>
+              <a v-else :href="project.liveUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
                 Se projekt
               </a>
-              <a :href="project.repoUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
+              <a v-if="project.repoUrl && project.repoUrl !== '#'" :href="project.repoUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
                 Github
+              </a>
+               <a v-if="project.scriptUrl" :href="project.scriptUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
+                Script
               </a>
             </div>
           </div>
