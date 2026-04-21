@@ -37,6 +37,7 @@ const project = projects.find((item) => item.id === 2)
               <p class="text-white-85 mb-3">
                 Jeg arbejdede med ideudvikling, UX/UI, frontend og grafisk produktion for at skabe en tydelig og engagerende brugerrejse.
                 Det var vigtigt i denne opgave at vi skulle have fokus på målgruppen, da det er et børne og familievenligt stykke, og derfor skulle være let tilgængeligt og indbydende for både børn og voksne.
+                Et andet element som vi følte var vigtigt var at bibeholde Astrid Lindgrens orignale kendetegn ved hendes originale bog cover billeder.
                 <p class="text-white-85 pt-2">
                     Denne opgave var en fantastisk mulighed for at anvende og integrere forskellige færdigheder og værktøjer, og det var spændende at se, hvordan de forskellige elementer kunne arbejde sammen for at skabe en sammenhængende og effektiv kampagneoplevelse.
                 </p>

@@ -22,6 +22,11 @@ const router = createRouter({
       name: 'broedrene-loevehjerte',
       component: () => import('../views/BroedreneLoevehjerteView.vue'),
     },
+    {
+      path: '/projects/portfolio-website',
+      name: 'portfolio-website',
+      component: () => import('../views/PortfolioWebsiteView.vue'),
+    },
   ],
 })
 

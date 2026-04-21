@@ -58,6 +58,13 @@ import { projects } from '@/data/projects'
               >
                 Se projekt
               </RouterLink>
+              <RouterLink
+                v-else-if="project.id === 3"
+                to="/projects/portfolio-website"
+                class="project-link text-[var(--color-gold)] font-semibold"
+              >
+                Se projekt
+              </RouterLink>
               <a v-else :href="project.liveUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
                 Se projekt
               </a>
