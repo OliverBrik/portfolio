@@ -30,7 +30,6 @@ import profileImg from '@/assets/imgs/logo ob.svg'
 </template>
 
 <style scoped>
-/* Custom SVG pattern background and solid color */
 .custom-bg {
   background-image: url('@/assets/imgs/bg-pattern.svg');
   background-repeat: repeat;
