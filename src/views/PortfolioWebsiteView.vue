@@ -17,7 +17,7 @@ const galleryItems = [
 
 <template>
   <main class="pt-2 container mx-auto grid grid-cols-12 gap-4">
-    <section class="col-span-12 md:col-start-2 md:col-span-11 px-8 py-6">
+    <section class="col-span-12 md:col-start-2 md:col-span-10 px-8 py-6">
       <div class="mb-6">
         <RouterLink to="/myprojects" class="project-link text-[var(--color-gold)] font-semibold">
           Tilbage til projekter

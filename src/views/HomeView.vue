@@ -4,7 +4,7 @@
 
 <template>
   <main class="pt-2 container mx-auto grid grid-cols-12 gap-4">
-    <div class="col-span-12 md:col-start-2 md:col-span-11 grid grid-cols-12 gap-6 items-start">
+    <div class="col-span-12 md:col-start-2 md:col-span-10 grid grid-cols-12 gap-6 items-start">
       <div class="col-span-12 md:col-span-6 relative flex flex-col items-start px-8 py-6">
         <img
           src="@/assets/imgs/guldklamme2.svg"
@@ -36,7 +36,7 @@
         />
       </div>
       <div class="col-span-12 md:col-span-6 self-start flex items-start justify-center pt-6 md:pr-12">
-        <div class="relative w-full h-96 md:h-[28rem] border border-[var(--color-gold)] rounded-none overflow-hidden">
+        <div class="relative w-full h-[26rem] md:h-[32rem] border border-[var(--color-gold)] rounded-none overflow-hidden">
           <a
             href="https://www.linkedin.com/in/oliver-brik/"
             target="_blank"

@@ -37,7 +37,7 @@ export const projects = [
         role: 'UX/UI + Frontend + Content Creation',
         summary:
             'Personlig portfolio bygget i Vue med fokus på tydelig identitet, informativt, performance og responsivt layout.',
-        tools: ['Vue 3', 'TailwindCSS', 'Vite', 'JavaScript'],
+        tools: ['Vue 3', 'TailwindCSS', 'Vite', 'JavaScript', 'InDesign', 'Illustrator', 'Photoshop'],
         liveUrl: '#',
         repoUrl: '#',
         image: card3ScreenImage,
