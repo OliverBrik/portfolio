@@ -8,12 +8,12 @@ import profileImg from '@/assets/imgs/logo ob.svg'
   <div class="min-h-screen w-full grid grid-rows-[auto_1fr_auto] text-white custom-bg">
     <header class="w-full shadow z-50 bg-moss text-white">
       <div class="wrapper w-full px-4 grid grid-cols-12 gap-0">
-        <nav class="col-span-12 md:col-start-2 md:col-span-10 grid grid-cols-3 items-center py-2 gap-10">
+        <nav class="col-span-12 md:col-start-2 md:col-span-10 grid grid-cols-2 md:grid-cols-3 items-center py-2 gap-10">
           <div class="flex justify-start gap-4">
             <RouterLink to="/" class="nav-link hover:text-gold font-semibold">Forside</RouterLink>
             <RouterLink to="/myprojects" class="nav-link hover:text-gold font-semibold">Projekter</RouterLink>
           </div>
-          <div class="flex justify-center">
+          <div class="hidden md:flex justify-center">
             <img :src="profileImg" alt="Profile" class="w-20 h-auto max-h-16 pb-4" />
           </div>
           <div class="flex justify-end pr-8">

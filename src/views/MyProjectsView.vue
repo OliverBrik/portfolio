@@ -28,12 +28,7 @@ import { projects } from '@/data/projects'
             >
               <img :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
             </a>
-            <img
-              v-else
-              :src="project.image"
-              :alt="project.title"
-              :class="['w-full h-full', project.id === 5 ? 'object-contain bg-black/10' : 'object-cover']"
-            />
+            <img v-else :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
           </div>
 
           <div class="p-5">
