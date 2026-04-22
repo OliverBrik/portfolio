@@ -31,7 +31,7 @@ const project = projects.find((item) => item.id === 5)
             <section class="md:col-span-3">
               <h2 class="text-white text-2xl font-bold mb-3">Projekt Detaljer</h2>
               <p class="text-white-85 mb-3">
-                Infographics-plakaten blev udviklet med fokus på at formidle information hurtigt, klart og visuelt engagerende.
+               Vores første Plakat projekt var Infographics plakaten, som blev udviklet med fokus på at formidle information hurtigt, klart og visuelt engagerende.
                 Målet var at omsætte research og data til et layout, der er let at afkode ved første blik.
               </p>
               <p class="text-white-85 mb-3">
@@ -57,7 +57,6 @@ const project = projects.find((item) => item.id === 5)
             </section>
 
             <section class="md:col-span-2">
-              <h2 class="text-white text-2xl font-bold mb-4">Galleri</h2>
               <article class="w-full border border-[rgba(184,155,79,0.45)] bg-white/5 overflow-hidden">
                 <div class="h-80 md:h-[30rem] border-b border-[rgba(184,155,79,0.35)]">
                   <img :src="project.galleryImage || project.image" alt="Infographics plakat" class="w-full h-full object-contain bg-black/10" />
