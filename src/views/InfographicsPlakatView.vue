@@ -1,9 +1,7 @@
 <script setup>
 import { projects } from '@/data/projects'
-import miniMeGalleryImage from '@/assets/imgs/minime.jpg'
 
-const project = projects.find((item) => item.id === 4)
-const miniMeCardImage = miniMeGalleryImage
+const project = projects.find((item) => item.id === 5)
 </script>
 
 <template>
@@ -17,7 +15,7 @@ const miniMeCardImage = miniMeGalleryImage
 
       <article v-if="project" class="border-2 border-[var(--color-gold)] bg-moss/45 overflow-hidden">
         <div class="h-64 md:h-[28rem] border-b border-[rgba(184,155,79,0.35)]">
-          <img :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
+          <img :src="project.image" :alt="project.title" class="w-full h-full object-contain bg-black/10" />
         </div>
 
         <div class="p-6 md:p-8">
@@ -33,15 +31,15 @@ const miniMeCardImage = miniMeGalleryImage
             <section class="md:col-span-3">
               <h2 class="text-white text-2xl font-bold mb-3">Projekt Detaljer</h2>
               <p class="text-white-85 mb-3">
-                Mini-Me var en af vores første projekter inden for faget content creation. I Projektet arbejdede jeg med karakterdesign og visuel storytelling med udgangspunkt i min egen identitet.
-                Målet var at skabe en letgenkendelig digital figur, som kunne bruges på tværs af portfolio, præsentationer og sociale medier.
+                Infographics-plakaten blev udviklet med fokus på at formidle information hurtigt, klart og visuelt engagerende.
+                Målet var at omsætte research og data til et layout, der er let at afkode ved første blik.
               </p>
               <p class="text-white-85 mb-3">
-                Processen omfattede skitsering, finde mine kendetegn, farvevalg, forenkling af former og iteration i Illustrator og Photoshop,
-                så figuren beholdt personlighed men stadig fungerede i forskellige størrelser.
+                I processen arbejdede jeg med hierarki, ikonografi, farvekontrast og typografi,
+                sa budskabet blev kommunikeret tydeligt uden at miste det visuelle udtryk.
               </p>
               <p class="text-white-85">
-                Projektet styrkede min evne til at arbejde med branding, konsistent visuel stil og karakterbaseret kommunikation.
+                Projektet gav erfaring med informationsdesign, struktureret dataformidling og balancen mellem æstetik og læsbarhed.
               </p>
 
               <section class="mt-6">
@@ -62,10 +60,10 @@ const miniMeCardImage = miniMeGalleryImage
               <h2 class="text-white text-2xl font-bold mb-4">Galleri</h2>
               <article class="w-full border border-[rgba(184,155,79,0.45)] bg-white/5 overflow-hidden">
                 <div class="h-80 md:h-[30rem] border-b border-[rgba(184,155,79,0.35)]">
-                  <img :src="miniMeCardImage" alt="Mini-Me billede" class="w-full h-full object-cover" />
+                  <img :src="project.galleryImage || project.image" alt="Infographics plakat" class="w-full h-full object-contain bg-black/10" />
                 </div>
                 <div class="px-4 py-3">
-                  <p class="text-white font-semibold">Mini-Me Visual</p>
+                  <p class="text-white font-semibold">Infographics Plakat</p>
                 </div>
               </article>
             </section>

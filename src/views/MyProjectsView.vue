@@ -28,7 +28,12 @@ import { projects } from '@/data/projects'
             >
               <img :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
             </a>
-            <img v-else :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
+            <img
+              v-else
+              :src="project.image"
+              :alt="project.title"
+              :class="['w-full h-full', project.id === 5 ? 'object-contain bg-black/10' : 'object-cover']"
+            />
           </div>
 
           <div class="p-5">
@@ -68,6 +73,13 @@ import { projects } from '@/data/projects'
               <RouterLink
                 v-else-if="project.id === 4"
                 to="/projects/mini-me"
+                class="project-link text-[var(--color-gold)] font-semibold"
+              >
+                Se projekt
+              </RouterLink>
+              <RouterLink
+                v-else-if="project.id === 5"
+                to="/projects/infographics-plakat"
                 class="project-link text-[var(--color-gold)] font-semibold"
               >
                 Se projekt

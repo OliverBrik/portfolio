@@ -1,12 +1,14 @@
 <script setup>
 import { projects } from '@/data/projects'
+import businessCardImage from '@/assets/imgs/businesscard.jpg'
+
 
 const project = projects.find((item) => item.id === 3)
 
 const galleryItems = [
   {
     title: 'Business Card',
-    image: '/business-card.jpg',
+    image: businessCardImage,
   },
   {
     title: 'CV',

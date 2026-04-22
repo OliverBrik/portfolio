@@ -1,6 +1,8 @@
 import videoCvScreenImage from '@/assets/imgs/videocvscreen.jpg'
 import card2ScreenImage from '@/assets/imgs/BLHheaderimg.jpg'
 import card3ScreenImage from '@/assets/imgs/portfoliopage.jpg'
+import card5ScreenImage from '@/assets/imgs/NationalFlowerDay.jpg'
+import card5FullScreenImage from '@/assets/imgs/NationalFlowerDay_full.jpg'
 
 export const projects = [
     {
@@ -64,6 +66,7 @@ export const projects = [
         tools: ['InDesign', 'Illustrator', 'Research'],
         liveUrl: '#',
         repoUrl: '#',
-        image: 'https://picsum.photos/seed/project-4/900/600',
+        image: card5ScreenImage,
+        galleryImage: card5FullScreenImage,
     },
 ]

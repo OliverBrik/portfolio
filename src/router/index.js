@@ -33,6 +33,11 @@ const router = createRouter({
       component: () => import('../views/MiniMeView.vue'),
     },
     {
+      path: '/projects/infographics-plakat',
+      name: 'infographics-plakat',
+      component: () => import('../views/InfographicsPlakatView.vue'),
+    },
+    {
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue'),
