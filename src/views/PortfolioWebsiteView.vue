@@ -1,6 +1,7 @@
 <script setup>
 import { projects } from '@/data/projects'
 import businessCardImage from '@/assets/imgs/businesscard.jpg'
+import cvPictureImage from '@/assets/imgs/CVpicture.jpg'
 
 
 const project = projects.find((item) => item.id === 3)
@@ -12,7 +13,8 @@ const galleryItems = [
   },
   {
     title: 'CV',
-    image: '/cv-preview.jpg',
+    image: cvPictureImage,
+    href: '/Oliver_Brik_CV.pdf',
   },
 ]
 </script>
@@ -80,7 +82,17 @@ const galleryItems = [
                 class="border border-[rgba(184,155,79,0.45)] bg-white/5 overflow-hidden"
               >
                 <div class="h-56 md:h-64 border-b border-[rgba(184,155,79,0.35)]">
-                  <img :src="item.image" :alt="item.title" class="w-full h-full object-cover" />
+                  <a
+                    v-if="item.href"
+                    :href="item.href"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="block w-full h-full"
+                    :aria-label="`Aben ${item.title} PDF`"
+                  >
+                    <img :src="item.image" :alt="item.title" class="w-full h-full object-cover" />
+                  </a>
+                  <img v-else :src="item.image" :alt="item.title" class="w-full h-full object-cover" />
                 </div>
                 <div class="px-4 py-3">
                   <p class="text-white font-semibold">{{ item.title }}</p>
