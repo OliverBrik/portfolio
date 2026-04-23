@@ -3,6 +3,7 @@ import card2ScreenImage from '@/assets/imgs/BLHheaderimg.jpg'
 import card3ScreenImage from '@/assets/imgs/portfoliopage.jpg'
 import card5ScreenImage from '@/assets/imgs/NationalFlowerDay.jpg'
 import card5FullScreenImage from '@/assets/imgs/NationalFlowerDay_full.jpg'
+import miniMeClassImage from '@/assets/imgs/miniMeClasspic.jpg'
 
 export const projects = [
     {
@@ -54,7 +55,7 @@ export const projects = [
         tools: ['Illustrator', 'Photoshop',],
         liveUrl: '#',
         repoUrl: '#',
-        image: 'https://picsum.photos/seed/project-3/900/600',
+        image: miniMeClassImage,
     },
     {
         id: 5,

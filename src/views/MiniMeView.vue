@@ -1,9 +1,11 @@
 <script setup>
 import { projects } from '@/data/projects'
 import miniMeGalleryImage from '@/assets/imgs/minime.jpg'
+import miniMeHeaderImage from '@/assets/imgs/miniMeClasspic.jpg'
 
 const project = projects.find((item) => item.id === 4)
 const miniMeCardImage = miniMeGalleryImage
+const miniMeHeader = miniMeHeaderImage
 </script>
 
 <template>
@@ -17,7 +19,7 @@ const miniMeCardImage = miniMeGalleryImage
 
       <article v-if="project" class="border-2 border-[var(--color-gold)] bg-moss/45 overflow-hidden">
         <div class="h-64 md:h-[28rem] border-b border-[rgba(184,155,79,0.35)]">
-          <img :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
+          <img :src="miniMeHeader" :alt="project.title" class="w-full h-full object-cover" />
         </div>
 
         <div class="p-6 md:p-8">
