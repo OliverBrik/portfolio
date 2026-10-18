@@ -33,9 +33,14 @@ const router = createRouter({
       component: () => import('../views/MiniMeView.vue'),
     },
     {
-      path: '/projects/infographics-plakat',
-      name: 'infographics-plakat',
-      component: () => import('../views/InfographicsPlakatView.vue'),
+      path: '/projects/mikkelborg-kro',
+      name: 'mikkelborg-kro',
+      component: () => import('../views/MikkelborgKroView.vue'),
+    },
+    {
+      path: '/projects/business-de-dk',
+      name: 'business-de-dk',
+      component: () => import('../views/BusinessDeDkView.vue'),
     },
     {
       path: '/contact',

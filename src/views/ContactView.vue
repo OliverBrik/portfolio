@@ -36,7 +36,7 @@
             Base: Esbjerg, Danmark
           </p>
           <p class="text-white-85 mb-4">
-            Uddannelse: Multimediedesigner (2. semester)
+            Uddannelse: Multimediedesigner (3. semester)
           </p>
         </article>
       </div>

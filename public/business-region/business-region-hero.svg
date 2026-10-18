@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">Business DE-DK</title>
+  <desc id="description">Digital platform for virksomheder og jobsøgende i grænseregionen mellem Danmark og Tyskland.</desc>
+  <rect width="1600" height="900" fill="#f4f1e9"/>
+  <path d="M0 690C230 570 350 760 570 620S980 530 1170 650s275 30 430-95v345H0Z" fill="#d9e0d1"/>
+  <path d="M0 720C250 600 375 800 605 665s390-95 570 5 260 35 425-75" fill="none" stroke="#7e9275" stroke-width="5" opacity=".7"/>
+  <circle cx="1320" cy="215" r="140" fill="#d9e0d1" opacity=".8"/>
+  <circle cx="1320" cy="215" r="92" fill="none" stroke="#7e9275" stroke-width="4" opacity=".65"/>
+  <text x="800" y="220" text-anchor="middle" fill="#26351f" font-family="Arial, Helvetica, sans-serif" font-size="34" letter-spacing="9">2. SEMESTER EKSAMENSPROJEKT</text>
+  <text x="800" y="390" text-anchor="middle" fill="#26351f" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="800">Business DE-DK</text>
+  <text x="800" y="480" text-anchor="middle" fill="#26351f" font-family="Arial, Helvetica, sans-serif" font-size="34">En digital platform for virksomheder og jobsøgende</text>
+  <text x="800" y="530" text-anchor="middle" fill="#26351f" font-family="Arial, Helvetica, sans-serif" font-size="34">i grænseregionen mellem Danmark og Tyskland.</text>
+</svg>

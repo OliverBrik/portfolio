@@ -18,17 +18,15 @@ import { projects } from '@/data/projects'
           class="project-card border-2 border-[var(--color-gold)] bg-moss/45 overflow-hidden"
         >
           <div class="h-52 border-b border-[rgba(184,155,79,0.35)]">
-            <a
-              v-if="project.id === 1"
-              :href="project.liveUrl"
-              target="_blank"
-              rel="noreferrer"
-              class="block w-full h-full"
-              aria-label="Se Video CV pa YouTube"
-            >
-              <img :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
-            </a>
-            <img v-else :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
+            <img
+              v-if="project.image"
+              :src="project.image"
+              :alt="project.title"
+              class="w-full h-full object-cover"
+            />
+            <div v-else class="w-full h-full flex items-center justify-center text-gold/70 text-sm">
+              Mere info kommer snart
+            </div>
           </div>
 
           <div class="p-5">
@@ -37,10 +35,10 @@ import { projects } from '@/data/projects'
               <span class="text-gold font-semibold text-sm">{{ project.year }}</span>
             </div>
 
-            <p class="text-gold/90 font-semibold text-sm mb-3">{{ project.role }}</p>
-            <p class="text-white-85 text-sm mb-4">{{ project.summary }}</p>
+            <p v-if="project.role" class="text-gold/90 font-semibold text-sm mb-3">{{ project.role }}</p>
+            <p v-if="project.summary" class="text-white-85 text-sm mb-4">{{ project.summary }}</p>
 
-            <ul class="flex flex-wrap gap-2 mb-5">
+            <ul v-if="project.tools.length" class="flex flex-wrap gap-2 mb-5">
               <li
                 v-for="tool in project.tools"
                 :key="tool"
@@ -52,7 +50,14 @@ import { projects } from '@/data/projects'
 
             <div class="flex items-center gap-4">
               <RouterLink
-                v-if="project.id === 2"
+                v-if="project.id === 6"
+                to="/projects/mikkelborg-kro"
+                class="project-link text-[var(--color-gold)] font-semibold"
+              >
+                Se projekt
+              </RouterLink>
+              <RouterLink
+                v-else-if="project.id === 2"
                 to="/projects/broedrene-loevehjerte"
                 class="project-link text-[var(--color-gold)] font-semibold"
               >
@@ -74,16 +79,19 @@ import { projects } from '@/data/projects'
               </RouterLink>
               <RouterLink
                 v-else-if="project.id === 5"
-                to="/projects/infographics-plakat"
+                to="/projects/business-de-dk"
                 class="project-link text-[var(--color-gold)] font-semibold"
               >
                 Se projekt
               </RouterLink>
-              <a v-else :href="project.liveUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
+              <a v-else-if="project.liveUrl && project.liveUrl !== '#'" :href="project.liveUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
                 Se projekt
               </a>
               <a v-if="project.repoUrl && project.repoUrl !== '#'" :href="project.repoUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
                 Github
+              </a>
+              <a v-if="project.reportUrl" :href="project.reportUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
+                Rapport
               </a>
                <a v-if="project.scriptUrl" :href="project.scriptUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
                 Script

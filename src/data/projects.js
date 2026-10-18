@@ -1,28 +1,46 @@
-import videoCvScreenImage from '@/assets/imgs/videocvscreen.jpg'
 import card2ScreenImage from '@/assets/imgs/BLHheaderimg.jpg'
 import card3ScreenImage from '@/assets/imgs/portfoliopage.jpg'
-import card5ScreenImage from '@/assets/imgs/NationalFlowerDay.jpg'
-import card5FullScreenImage from '@/assets/imgs/NationalFlowerDay_full.jpg'
 import miniMeClassImage from '@/assets/imgs/miniMeClasspic.jpg'
 
 export const projects = [
     {
-        id: 1,
-        title: 'Video CV',
+        id: 6,
+        title: 'Mikkelborg Kro',
         year: '2026',
-        role: 'Video Production',
+        role: 'Branding + Visuel identitet',
         summary:
-            'Video CV produceret i Premiere Pro og After Effects, hvor jeg præsenterer mine kompetencer og erfaringer på en kreativ og visuel måde.',
-        tools: ['Premiere Pro', 'Adobe After Effects', 'Scriptwriting'],
-        liveUrl: 'https://www.youtube.com/watch?v=E9ImpDZFHYE',
-        scriptUrl: '/Video_CV_script.pdf',
-        image: videoCvScreenImage,
+            'Designproces for en samlet visuel identitet til Mikkelborg Kro med fokus på logo, farver og anvendelse på forskellige materialer.',
+        tools: ['Illustrator', 'Branding', 'Logo Design', 'Mockups'],
+        liveUrl: '#',
+        designProcessUrl: '/mikkelborg/Mikkelborg_Kro_Designproces.pdf',
+        image: '/mikkelborg/Mikkelborg_Hovedlogo_Farvet.png',
+    },
+    {
+        id: 5,
+        title: '2. semester eksamensprojekt',
+        year: '2026',
+        role: 'UX/UI + Frontend + Research',
+        summary:
+            '2. semester eksamensprojekt udviklet som en digital platform for Business DE-DK med fokus på at skabe forbindelser og muligheder på tværs af den dansk-tyske grænseregion.',
+        tools: ['Figma', 'Vue', 'JavaScript', 'Research', 'UX/UI', 'Firebase'],
+        liveUrl: 'https://businessregion-c9c60.web.app/',
+        reportUrl: '/business-region/2-semester-eksamensrapport.pdf',
+        image: '/business-region/business-region-hero.svg',
+    },
+    {
+        id: 1,
+        title: "SEA's Bedste Kortfilm 2026",
+        year: '2026',
+        role: '',
+        summary: '',
+        tools: [],
+        liveUrl: '#',
+        image: null,
     },
     {
         id: 2,
         title: 'Brødrene Løvehjerte (Eksamensprojekt)',
         year: '2025',
-        role: 'Illustrator + Photoshop',
         role: 'Design + Frontend + UX/UI + Video Production',
         summary:
             'Første semester eksamensprojekt for Multimediedesigner uddannelsen, her fik vi opgaven at vi skulle promovere teaterstykket Brødrene løvehjerte af Esbjergs Amatør teater Skarntyden',
@@ -56,18 +74,5 @@ export const projects = [
         liveUrl: '#',
         repoUrl: '#',
         image: miniMeClassImage,
-    },
-    {
-        id: 5,
-        title: 'Infographics Plakat',
-        year: '2026',
-        role: 'Content Creation',
-        summary:
-            'Infographics plakat, om National Flower Day. Her jeg har designet en informativ og visuelt tiltalende plakat, der præsenterer komplekse data på en letforståelig måde ved hjælp af InDesign og Illustrator.',
-        tools: ['InDesign', 'Illustrator', 'Research'],
-        liveUrl: '#',
-        repoUrl: '#',
-        image: card5ScreenImage,
-        galleryImage: card5FullScreenImage,
     },
 ]
