@@ -43,6 +43,11 @@ const router = createRouter({
       component: () => import('../views/BusinessDeDkView.vue'),
     },
     {
+      path: '/projects/sea-bedste-kortfilm',
+      name: 'sea-bedste-kortfilm',
+      component: () => import('../views/SeaBedsteKortfilmView.vue'),
+    },
+    {
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue'),

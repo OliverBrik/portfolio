@@ -50,7 +50,14 @@ import { projects } from '@/data/projects'
 
             <div class="flex items-center gap-4">
               <RouterLink
-                v-if="project.id === 6"
+                v-if="project.id === 1"
+                to="/projects/sea-bedste-kortfilm"
+                class="project-link text-[var(--color-gold)] font-semibold"
+              >
+                Se projekt
+              </RouterLink>
+              <RouterLink
+                v-else-if="project.id === 6"
                 to="/projects/mikkelborg-kro"
                 class="project-link text-[var(--color-gold)] font-semibold"
               >
@@ -93,8 +100,8 @@ import { projects } from '@/data/projects'
               <a v-if="project.reportUrl" :href="project.reportUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
                 Rapport
               </a>
-               <a v-if="project.scriptUrl" :href="project.scriptUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
-                Script
+              <a v-if="project.videoUrl" :href="project.videoUrl" class="project-link text-[var(--color-gold)] font-semibold" target="_blank" rel="noreferrer">
+                Film
               </a>
             </div>
           </div>

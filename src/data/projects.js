@@ -31,11 +31,13 @@ export const projects = [
         id: 1,
         title: "SEA's Bedste Kortfilm 2026",
         year: '2026',
-        role: '',
-        summary: '',
-        tools: [],
+        role: 'Filmproduktion + Kamera + Lyd og lys',
+        summary:
+            '“Det jeg ser” er en psykologisk kortfilm om jalousi, mistillid og grænsen mellem det, Kim forestiller sig, og det der faktisk sker. Filmen vandt Syddansk Erhvervsakademis pris for bedste kortfilm i 2026.',
+        tools: ['Premiere Pro', 'Kamera', 'Lyd og lys', 'Storytelling', 'Farvekorrektion'],
         liveUrl: '#',
-        image: null,
+        videoUrl: 'https://www.youtube.com/watch?v=Zmu-XLQ5NDM',
+        image: '/seabestshortmovie.jpg',
     },
     {
         id: 2,
